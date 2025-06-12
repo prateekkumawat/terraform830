@@ -8,3 +8,5 @@ variable "azs"{
 variable "subnet_cidr_blocks" {
     type = list
 }
+variable "access_key"   {}
+variable "secret_key"   {}
