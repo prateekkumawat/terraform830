@@ -4,6 +4,7 @@ variable "vpc_details" {
       Name              =  string
       instance_tenancy  = optional(string)
       tags              = map(string)
+      prefix            = string
       enable_dns_hostnames = optional(bool)
       enable_dns_support   = optional(bool)
   }))

@@ -5,5 +5,6 @@ variable "vpc_details" {
     Name             = string
     instance_tenancy = optional(string)
     tags             = map(string)
+    prefix           = string
   }))
 }

@@ -7,7 +7,7 @@ locals {
     instance_tenancy       =  v.instance_tenancy
     enable_dns_hostnames   =  v.enable_dns_hostnames 
     enable_dns_support     =  v.enable_dns_support 
-    tags                   =  v.tags
+    tags                   =  merge(v.tags , v.prefix == null ? tomap({ Name: "${v.Name}"}): tomap({ Name: "${v.prefix}-${v.Name}"}))
     }
   }
 }

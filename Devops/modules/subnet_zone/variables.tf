@@ -6,5 +6,6 @@ variable "subnet_details" {
         map_public_ip_on_launch = optional(bool)
         tags             = map(string)
         vpc_id           = string
+        Name             = string
     }))
 }
